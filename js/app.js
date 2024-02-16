@@ -19,3 +19,5 @@ function alterarStatus(btn,img) {
         // E muda o texto do botão.
     }
 }
+
+.
