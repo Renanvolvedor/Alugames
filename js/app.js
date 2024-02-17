@@ -1,3 +1,5 @@
+let jogosAlugados = 0;
+
 function alterarStatus(id) {
 
     let lista = document.getElementById(`game-${id}`);
@@ -11,12 +13,14 @@ function alterarStatus(id) {
         imagem.classList.remove('dashboard__item__img--rented');
         botao.textContent = 'Alugar';
         alert(`O jogo ${nome.textContent} foi devolvido.`);
+        jogosAlugados--;
 
     } else {
 
             botao.classList.add('dashboard__item__button--return');
             imagem.classList.add('dashboard__item__img--rented');
             botao.textContent = 'Devolver';
+            jogosAlugados++;
 
         }
 }
