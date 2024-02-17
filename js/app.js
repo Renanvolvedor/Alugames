@@ -1,4 +1,12 @@
-let jogosAlugados = 0;
+//let jogosAlugados = 0;
+
+//document.addEventListener('DOMContentLoaded', function() {
+let jogosAlugados = document.querySelectorAll('.dashboard__item__img--rented').length;
+//});
+
+function exibirJogosAlugados() {
+    console.log(`Total de jogos alugados: ${jogosAlugados}`);
+}
 
 function alterarStatus(id) {
 
